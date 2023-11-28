@@ -18,12 +18,12 @@ public class Receita {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
-
     private String tidareceita;
+    private String modepreparo;    
+    private String ingredientes;
+    private boolean vegana;    
+    private String dificuldade;
 
-    private String modepreparo;
-
-    private boolean vegana;
 
     @ManyToOne
     private Usuario usuario;

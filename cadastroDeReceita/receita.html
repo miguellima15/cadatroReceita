@@ -40,12 +40,10 @@
 
                <div class="form-second">
                 <div class="div-form">
-                    <label for="dificuldade">Dificuldade:</label>
-                    <select id="dificuldade" name="dificuldade">
-                        <option value="fácil">Fácil</option>
-                        <option value="médio">Médio</option>
-                        <option value="difícil">Difícil</option>
-                    </select>
+                    <div class="div-form">
+                        <label for="dificuldade">Dificuldade:</label>
+                        <input type="text" name="dificuldade" id="dificuldade" required>
+                       </div> 
                    </div>
     
                    <div class="div-form">
@@ -72,27 +70,26 @@
                 <button type="submit">Cadastrar Receita</button>
                 
             </div>
-            <div>
+            <!--<div>
             <label class="picture" for="picture__input" tabIndex="0">
                 <span class="picture__image">Upload da imagembolo</span>
             </label>
             
             <input type="file" name="picture__input" id="picture__input">
-            </div>
+            </div>-->
             
                
 
         </form>
-        <div id="mensagem"></div>
-        <div id="lista-receitas"></div>
+        
     </div>  
 
 
     <div class="container" id="id-container">
         <button class="button" id="button-exibir" onclick="atualizarListaDeReceitas()">Sua receita será exibida aqui!</button>
-
-    
-     
+        <div id="mensagem"></div>
+        <div id="lista-receitas"></div>
+    </div>
     <script src=".js"></script>  
 </main>
 

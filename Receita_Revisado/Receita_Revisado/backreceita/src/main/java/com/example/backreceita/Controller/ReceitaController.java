@@ -3,6 +3,7 @@ package com.example.backreceita.Controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -13,40 +14,34 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.example.backreceita.Model.Receita;
 import com.example.backreceita.Repository.ReceitaRepositorio;
+import com.example.backreceita.Service.ReceitaService;
 
 @RestController
+@CrossOrigin(origins = "*")
 @RequestMapping("api/receita")
 public class ReceitaController {
 
     @Autowired
-    private ReceitaRepositorio repositorio;
+    private ReceitaService receitaService;
 
     @GetMapping
     public List<Receita> listar() {
-        return repositorio.findAll();
+        return receitaService.listarReceitas();
     }
 
     @PostMapping
     public Receita adicionar(@RequestBody Receita receita) {
-        return repositorio.save(receita);
+        return receitaService.adicionarReceita(receita);
     }
 
     @PutMapping
     public Receita alterar(@RequestBody Receita receita) {
-        if (receita.getId() > 0)
-            return repositorio.save(receita);
-        return null;
+        return receitaService.alterarReceita(receita);
     }
 
     @DeleteMapping
     public String deletar(@RequestBody Receita receita) {
-        if (receita.getId() > 0) {
-            repositorio.delete(receita);
-            return "Receita removido com sucesso";
-
-        }
-
-        return "Receita não encontrado";
+        return receitaService.deletarReceita(receita);
     }
-
 }
+

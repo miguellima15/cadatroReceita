@@ -170,24 +170,28 @@ input[type="number"]{
     
 }
 
-.receita{
+#lista-receitas {
+    max-height: 400px; /* Altura máxima da lista */
+    overflow-y: auto; /* Adiciona uma barra de rolagem vertical quando necessário */
+}
+
+.receita {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    flex-wrap: wrap;
     padding: 30px;
+    border-bottom: 1px solid #ffffff; /* Adiciona uma linha separadora entre as receitas */
 }
 
-.receita h3{
-    color: #000000;
+.receita h3 {
+    color: #ffffff;
     font-size: 30px;
-
 }
 
-.receita p{
-    color: #0f0e0e;
+.receita p {
+    color: #ffffff;
     font-size: 20px;
-
+    margin-bottom: 10px; /* Adiciona um espaçamento inferior entre os parágrafos */
 }
 
 
