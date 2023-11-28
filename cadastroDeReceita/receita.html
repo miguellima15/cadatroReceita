@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    
+    <title>Gerenciamento de Receitas</title>
+</head>
+<body>
+    <header>
+        <div>
+            <img  id="imagembolo" src="img/dsBuffer.png.png" >
+        </div>
+    </header>
+    <div class="text-princ">
+        <h1>Gerenciamento de Receitas</h1>
+    </div>
+    <main class="main-princ"> 
+
+        <div class="form-receitas">
+            <form class="form">
+               
+                <div class="form-topo">
+                    <div class="div-form">
+                        <label for="Id">ID da Receita</label>
+                        <input type="number" name="id" id="id" required>
+                       </div> 
+        
+                       <div class="div-form">
+                        <label for="Titulo">Titulo da Receita</label>
+                        <input type="text" name="titulo" id="titulo" required>
+                       </div> 
+                </div>
+
+               <div class="form-second">
+                <div class="div-form">
+                    <label for="dificuldade">Dificuldade:</label>
+                    <select id="dificuldade" name="dificuldade">
+                        <option value="fácil">Fácil</option>
+                        <option value="médio">Médio</option>
+                        <option value="difícil">Difícil</option>
+                    </select>
+                   </div>
+    
+                   <div class="div-form">
+                    <label for="ingredientes">Adicione os Ingredientes</label>
+                    <textarea name="ingredientes" id="ingredientes" required></textarea>
+                   </div>
+    
+                    <div class="div-form">
+                    <label for="modoDePreparo">Modo de Preparo</label>
+                    <textarea name="modoDePreparo" id="instrucoesDePreparo" required></textarea>
+                    </div>
+    
+                    <div class="div-form">
+                    
+                    <label for="vegana">Vegana:</label>
+                    <label class="check-label">
+                        <input type="checkbox"  id="vegana" name="vegana">
+                        <span></span>
+                    </label>
+                    
+                </div>
+               </div>
+               <div class="form-button">
+                <button type="submit">Cadastrar Receita</button>
+                
+            </div>
+            <div>
+            <label class="picture" for="picture__input" tabIndex="0">
+                <span class="picture__image">Upload da imagembolo</span>
+            </label>
+            
+            <input type="file" name="picture__input" id="picture__input">
+            </div>
+            
+               
+
+        </form>
+        <div id="mensagem"></div>
+        <div id="lista-receitas"></div>
+    </div>  
+
+
+    <div class="container" id="id-container">
+        <button class="button" id="button-exibir" onclick="atualizarListaDeReceitas()">Sua receita será exibida aqui!</button>
+
+    
+     
+    <script src=".js"></script>  
+</main>
+
+<footer>
+    <div class="img-footer">
+        <img src="img/dsBuffer.png.png">
+        <p> <strong>Lois miguel & Matheus lucas</strong> </p>
+       
+</footer>
+
+</body>
+
+</html>

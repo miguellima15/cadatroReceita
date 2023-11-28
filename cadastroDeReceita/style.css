@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color:  #b4e2eb;
+   /* background-image: url(img/dsBuffer.png.png);*/
+    
+    
+}
+
+header {
+    background-color:  #8ed4f0;
+    width: 100%;
+    height: 117px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   
+}
+
+header img{
+    margin-top: 20px;
+}
+
+.text-princ {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: white;
+}
+
+
+.main-princ{
+    display: flex;
+    align-items: center;
+    height: 800px;
+    flex-direction:column;
+    width: 100%;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.form-receitas{
+    display: flex;;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 1300px;
+    height: 300px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url(img/background-receitas.png);
+    border-radius: 10px;
+    box-shadow: 0px 6px 27px 0px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 0px 6px 27px 0px rgba(0,0,0,0.47);
+    -moz-box-shadow: 0px 6px 27px 0px rgba(0,0,0,0.47);
+    
+}
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    
+}
+
+.form-topo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-second{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 30px;
+    width: 400px;
+}
+
+.div-form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-form label {
+    color: #050711;
+    display: block;
+    font-size: 1.17em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+input[type="text"]{
+    color: #000000;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+
+   
+
+
+
+input[type="number"]{
+    color: #000000;
+    text-align: center;
+
+}
+
+.div-form input {
+    width: 250px;
+    border-radius: 5px;
+    height: 20px;
+}
+
+.div-form textarea {
+    border-radius: 10px;
+    width: 350px;
+    height: 40px;
+    padding-top: 10px;
+    text-align: center;
+    font-weight: 600;
+    
+    
+}
+
+.form-receitas button{
+    padding: 10px 20px;
+    background-color: #8bf1e9c4;
+    color: rgb(26, 20, 20);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+
+    
+    
+}
+
+#mensagem {
+    padding-top: 5px;
+    color: #090a0ac4;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    height: 450px;
+    background-image: url(img/fundo-receitas.png);
+    border-radius: 10px;
+    box-shadow: 0px 6px 27px 0px rgba(0,0,0,0.47);
+    -webkit-box-shadow: 0px 6px 27px 0px rgba(0,0,0,0.47);
+    -moz-box-shadow: 0px 6px 27px 0px rgba(0,0,0,0.47);
+    
+}
+
+.receita{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.receita h3{
+    color: #000000;
+    font-size: 30px;
+
+}
+
+.receita p{
+    color: #0f0e0e;
+    font-size: 20px;
+
+}
+
+
+
+footer {
+    background-color:  #8ed4f0;
+    width: 100%;
+    height: 117px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    align-items: center;
+   
+}
+
+
+.button {
+    padding: 10px 20px;
+    background-color: #8bf1e9c4;
+    color: rgb(7, 6, 6);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0px 20px 0px 20px;
+    
+}
+
+.socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+
+
+
+.socials a :hover{
+    color: #000000;
+   
+}
+
+.socials ion-icon{
+    color: rgb(17, 14, 14);
+   transition: 0.3s;
+}
+
+
+
+.img-footer img {
+    width: 80px;
+    height: 70px;
+    left: 50px; position:relative; 
+
+}
+
+.img-footer p {
+    color: rgb(17, 13, 13);
+    text-align: center;
+
+
+}
+
+
+.receita-label{
+    font-weight: 700;
+    color: #000000;
+}
+
+
+
+.check-label input {
+    display: none;
+}
+
+.check-label span {
+    width: 12px;
+    height: 12px;
+    display: block;
+    background-color:#f1eded;
+    border: 1px solid #000000;
+}
+
+.check-label input:checked + span {
+    background-color: #050505c4;
+}
+
+#imagembolo{
+    height: 200px;
+    border-radius: 50%;
+    align-content: left;
+    left: 50px; position:absolute; 
+}
+#picture__input {
+    display: none;
+}
+
+.picture {
+    width: 400px;
+    aspect-ratio: 16/9;
+    background: #8bf1e9c4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000000c4;
+    border: 2px dashed currentcolor;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+    outline: none;
+    overflow: hidden;
+}
+
+.picture:hover {
+    color: #777;
+    background: #ccc;
+}
+
+.picture:active {
+    border-color: turquoise;
+    color: turquoise;
+    background: #eee;
+}
+
+.picture:focus {
+    color: #777;
+    background: #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.picture__img {
+    max-width: 100%;
+}
+    
+
